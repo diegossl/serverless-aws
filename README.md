@@ -1,6 +1,6 @@
 # Serverless AWS
 
-This API aims to save, consult, delete and update an employee.
+This API has the function of saving, consulting, deleting and updating an employee.
 
 ## Technologies used
 
