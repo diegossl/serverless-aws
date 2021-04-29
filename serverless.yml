@@ -1,0 +1,33 @@
+service: employee
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+functions:
+  index:
+    handler: api/employee.submit
+    events:
+     - httpApi:
+        path: employee
+        method: get
+  store:
+    handler: api/employee.submit
+    events:
+     - httpApi:
+        path: employee
+        method: post
+  update:
+    handler: api/employee.submit
+    events:
+     - httpApi:
+        path: employee
+        method: put
+  delete:
+    handler: api/employee.submit
+    events:
+     - httpApi:
+        path: employee
+        method: delete
